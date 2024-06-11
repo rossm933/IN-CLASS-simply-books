@@ -6,7 +6,7 @@ import { signOut } from '../utils/auth';
 export default function UserProfile() {
   const { user } = useAuth();
   return (
-    <div>
+    <div style={{ color: 'white' }}>
       <h1>{user.displayName}</h1>
       <img src={user.photoURL} alt="userURL" />
       <h3>{user.email}</h3>
